@@ -449,4 +449,134 @@ code repo https://github.com/skmetz/poodr
   end
   ```
 
+## ON MODULES
+  
+  - Modules provide an alternative to inheritance related to sharing a 'role'.
+
+##### The total set of messages which an object can respond to;
+
+  * Those it directly implementes.
+  * Those implemented in all objects above it in the hierarchy.
+  * Those implemented in any module that has been added to it.
+  * Those implemented in all modules added to any object above it in the hierarchy.
+
+  - consider the use of schedule, a behavior that many objects may want.
+
+  ```ruby 
+    class Bicycle
+      attr_reader :schedule, :size, :chain, :tire_size
+
+      # Inject the Schedule and provide a default
+      def initialize(args={})
+        @schedule = args[:schedule] || Schedule.new
+        # ...
+      end
+
+      # Return true if this bicycle is available
+      # during this (now Bicycle specific) interval.
+      def schedulable?(start_date, end_date)
+        !scheduled?(start_date - lead_days, end_date)
+      end
+
+      # Return the schedule's answer
+      def scheduled?(start_date, end_date)
+        schedule.scheduled?(self, start_date, end_date)
+      end
+
+      # Return the number of lead_days before a bicycle
+      # can be scheduled.
+      def lead_days
+        1
+      end
+
+      # ...
+    end
+
+    require 'date'
+    starting = Date.parse("2015/09/04")
+    ending   = Date.parse("2015/09/10")
+
+    b = Bicycle.new
+    b.schedulable?(starting, ending)
+  ```
+
+  * abstract out the messages that enable Scheduling.
+
+  ```ruby
+    module Schedulable
+      attr_writer :schedule
+
+      def schedule
+        @schedule ||= ::Schedule.new
+      end
+
+      def schedulable?(start_date, end_date)
+        !scheduled?(start_date - lead_days, end_date)
+      end
+
+      def scheduled?(start_date, end_date)
+        schedule.scheduled?(self, start_date, end_date)
+      end
+
+      # includers may override
+      def lead_days
+        0
+      end
+
+    end
+  ```
+
+  * then Bicycle, and any other class becomes more like..
+
+  ```ruby
+    class Bicycle
+      include Schedulable
+
+      def lead_days
+        1
+      end
+
+      # ...
+    end
+
+    class Vehicle
+      include Schedulable
+
+      def lead_days
+        3
+      end
+
+      # ...
+    end
+
+    class Mechanic
+      include Schedulable
+
+      def lead_days
+        4
+      end
+
+      # ...
+    end
+  ```
+
+##### OBVIOUS ANTIPATTERNS WITH MODULES
+
+  * An object that uses a variable with a name like type or category to determine what message to send to self contains two highly related but slightly different types.
+  * When a sending object check the class of the receiving object to determine what message to send, this is overlooking a duck type.
+
+#### LSP Liskov Substitution Principle
+
+  * Let q(x) be a property provable about objects x of type T, then q(y) should be true for objects y of type S thwhere S is a subtype of T.
+  * English, in order for a type system to have sanity, subtypes must be substitutable for their super types.
+  
+#### Some best practices...
+
+  * Use the Template Method Pattern.
+  * Preemptively decouple classes, avoid requiring inheritors to use super, use hook messages.
+  * Create shallow hierarchies.
+
+## Combining Objects with Composition
+
+
 
