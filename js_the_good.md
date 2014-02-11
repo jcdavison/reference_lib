@@ -91,6 +91,8 @@ for (element in obj) {
 
 ## ON OBJECTS
 
+
+
 #### GLOBAL ABATEMENT
 
   - don't store things on the global variable scope...
@@ -116,6 +118,41 @@ for (element in obj) {
   - a property can be any JS value expect undefined
   - inheritence is tied to prototype linkage, useful for initialization and memory consumption.
   - names can be legal JS names, ie first_name but for first-name it must be a string 'first-name'
+
+#### ON INHERITANCE
+
+```javascript
+
+
+var Animal = function () {
+  this.living = "not extinct";
+}
+
+var Dog = function () {
+  length: "brown";
+}
+
+Dog.prototype = new Animal();
+dog = new Dog()
+console.log(dog.living) // => 'not extinct'
+
+// but use the create method... 
+
+var Animal = {
+  extinctionStatus: "dead"
+}
+
+if (typeof Object.create !== 'function') {
+  Object.create = function (o) {
+    var F = function () {};
+    F.prototype = o;
+    return new F();
+  };
+};	
+
+var dog = Object.create(Animal)
+console.log(dog.extinctionStatus)
+```
 
 
 
@@ -350,3 +387,5 @@ DoSomething("bowl", "ski", callBackFunc)
 #### TODO
 
   - not sure I understand currying
+  - review memoizing fib functions
+  - I get how to create prototypes but not sure about the entire context of the prototype chapter.
