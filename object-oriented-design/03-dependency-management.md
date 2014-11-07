@@ -62,7 +62,7 @@ You know you are in trouble if, you make a change to `Wheel` and you find it nec
 
 ## DEFENSES AGAINST COUPLING
 
-#### INJECT DEPENDENCIES
+#### Inject Dependencies
 
 There is a problem that if `Wheel` stops responding to or changes, `.gear_inches()` will break. `.gear_inches()` will only collaborate with `Wheel`, when in fact, it shouldn't care where it gets diameter from. Having to instantiate `Gear` with `rim` and `tire`, to be passed to `Wheel` is also no good.
 

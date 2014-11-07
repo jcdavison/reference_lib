@@ -59,10 +59,40 @@ We see Classes as the dominant element of OO programming but in a more subtle se
 - [Evaluating Single Responsibility][evaluating single resp]
 - [Casual Interrogation][casual interrogation]
 - [Hide Instance Variables][hide instance variables]
+- [Enforce App Wide Single Reponsibility][global single resp]
+- [Isolate Extra Responsibilities in Classes][extra responsibilities]
+- [Complete Gear/Wheel][Full Gear/Wheel]
 
 
-[evaluating single resp]:https://github.com/jcdavison/reference_lib/blob/master/object-oriented-design/02-single-responsibility.md#single-responsibility-evaluation
-[casual interrogation]:https://github.com/jcdavison/reference_lib/blob/master/object-oriented-design/02-single-responsibility.md#evaluating-single-responsibility-via-casual-interrogation
-[hide instance variables]:02-single-responsibility.md#hide-instance-variables
 
 ## Dependency Management
+
+- [The Catch-22 of Objects][catch22]
+- [A Dependency is When..][dependency]
+- [Dependency Injection][injection]
+- [Isolation Class Instantiation][isolate instances]
+- [Isolate Vulnerable External Messages][isolate external messages]
+- [Remove Argument Order Dependencies][remove argument order]
+- [Explicitly Define Default Args][define default args]
+- [Isolate Multi-Param Initialization][multiparam init]
+- [Controlling Dependency Direction][dependency direction]
+
+
+
+[evaluating single resp]:02-single-responsibility.md#single-responsibility-evaluation
+[casual interrogation]:02-single-responsibility.md#evaluating-single-responsibility-via-casual-interrogation
+[hide instance variables]:02-single-responsibility.md#hide-instance-variables
+[hide data structures]:02-single-responsibility.md#hide-data-structures
+[global single resp]:02-single-responsibility.md#enforce-single-responsibility-everywhere
+[extra responsibilities]:02-single-responsibility.md#isolate-extra-responsibilities-in-classes
+[Full Gear/Wheel]:02-single-responsibility.md#someone-introduces-change
+
+[catch22]:03-dependency-management.md#the-catch-22s-of-objects
+[dependency]:03-dependency-management.md#a-dependency-occurs-when
+[injection]:03-dependency-management.md#inject-dependencies
+[isolate instances]:03-dependency-management.md#isolate-instance-creation
+[isolate external messages]:03-dependency-management.md#isolate-vulnerable-external-messages
+[remove argument order]:03-dependency-management.md#remove-argument-order-dependencies
+[define default args]:03-dependency-management.md#explicitly-define-default-values
+[multiparam init]:03-dependency-management.md#isolate-multiparameter-initialization
+[dependency direction]:03-dependency-management.md#dependency-direction-reversal
