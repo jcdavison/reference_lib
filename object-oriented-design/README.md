@@ -77,6 +77,10 @@ We see Classes as the dominant element of OO programming but in a more subtle se
 - [Isolate Multi-Param Initialization][multiparam init]
 - [Controlling Dependency Direction][dependency direction]
 
+## Flexible Interface Design
+
+
+
 
 
 [evaluating single resp]:02-single-responsibility.md#single-responsibility-evaluation
