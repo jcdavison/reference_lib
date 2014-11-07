@@ -59,7 +59,7 @@ We see Classes as the dominant element of OO programming but in a more subtle se
 - [Evaluating Single Responsibility][evaluating single resp]
 - [Casual Interrogation][casual interrogation]
 - [Hide Instance Variables][hide instance variables]
-- [Enforce App Wide Single Reponsibility][global single resp]
+- [Enforce App Wide Single Responsibility][global single resp]
 - [Isolate Extra Responsibilities in Classes][extra responsibilities]
 - [Complete Gear/Wheel][Full Gear/Wheel]
 
@@ -70,7 +70,7 @@ We see Classes as the dominant element of OO programming but in a more subtle se
 - [The Catch-22 of Objects][catch22]
 - [A Dependency is When..][dependency]
 - [Dependency Injection][injection]
-- [Isolation Class Instantiation][isolate instances]
+- [Isolate Class Instantiation][isolate instances]
 - [Isolate Vulnerable External Messages][isolate external messages]
 - [Remove Argument Order Dependencies][remove argument order]
 - [Explicitly Define Default Args][define default args]
