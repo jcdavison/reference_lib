@@ -56,4 +56,13 @@ We see Classes as the dominant element of OO programming but in a more subtle se
 
 ## Single Responsibility Code
 
+- [Evaluating Single Responsibility][evaluating single resp]
+- [Casual Interrogation][casual interrogation]
+- [Hide Instance Variables][hide instance variables]
+
+
+[evaluating single resp]:https://github.com/jcdavison/reference_lib/blob/master/object-oriented-design/02-single-responsibility.md#single-responsibility-evaluation
+[casual interrogation]:https://github.com/jcdavison/reference_lib/blob/master/object-oriented-design/02-single-responsibility.md#evaluating-single-responsibility-via-casual-interrogation
+[hide instance variables]:02-single-responsibility.md#hide-instance-variables
+
 ## Dependency Management
