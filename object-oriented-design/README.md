@@ -63,7 +63,13 @@ We see Classes as the dominant element of OO programming but in a more subtle se
 - [Isolate Extra Responsibilities in Classes][extra responsibilities]
 - [Complete Gear/Wheel][Full Gear/Wheel]
 
-
+[evaluating single resp]:02-single-responsibility.md#single-responsibility-evaluation
+[casual interrogation]:02-single-responsibility.md#evaluating-single-responsibility-via-casual-interrogation
+[hide instance variables]:02-single-responsibility.md#hide-instance-variables
+[hide data structures]:02-single-responsibility.md#hide-data-structures
+[global single resp]:02-single-responsibility.md#enforce-single-responsibility-everywhere
+[extra responsibilities]:02-single-responsibility.md#isolate-extra-responsibilities-in-classes
+[Full Gear/Wheel]:02-single-responsibility.md#someone-introduces-change
 
 ## Dependency Management
 
@@ -77,20 +83,6 @@ We see Classes as the dominant element of OO programming but in a more subtle se
 - [Isolate Multi-Param Initialization][multiparam init]
 - [Controlling Dependency Direction][dependency direction]
 
-## Flexible Interface Design
-
-
-
-
-
-[evaluating single resp]:02-single-responsibility.md#single-responsibility-evaluation
-[casual interrogation]:02-single-responsibility.md#evaluating-single-responsibility-via-casual-interrogation
-[hide instance variables]:02-single-responsibility.md#hide-instance-variables
-[hide data structures]:02-single-responsibility.md#hide-data-structures
-[global single resp]:02-single-responsibility.md#enforce-single-responsibility-everywhere
-[extra responsibilities]:02-single-responsibility.md#isolate-extra-responsibilities-in-classes
-[Full Gear/Wheel]:02-single-responsibility.md#someone-introduces-change
-
 [catch22]:03-dependency-management.md#the-catch-22s-of-objects
 [dependency]:03-dependency-management.md#a-dependency-occurs-when
 [injection]:03-dependency-management.md#inject-dependencies
@@ -100,3 +92,25 @@ We see Classes as the dominant element of OO programming but in a more subtle se
 [define default args]:03-dependency-management.md#explicitly-define-default-values
 [multiparam init]:03-dependency-management.md#isolate-multiparameter-initialization
 [dependency direction]:03-dependency-management.md#dependency-direction-reversal
+
+## Flexible Interface Design
+
+- [Modeling the Public Interface][interface modeling]
+- [Most Naive, Most Procedural Design][most naive]
+- [Less Naive, Mostly Procedural Design][less naive]
+- [Still Naive...][still naive]
+- [Much Less Naive][much less naive]
+- [Object Oriented Trip/Mechanic][object oriented trip mechanic]
+- [Object Oriented Customer Trip Bicycle][object oriented customer trip bicycle]
+
+[interface modeling]:04-creating-flexible-interfaces.md#modeling-the-public-interface
+[most naive]:04-creating-flexible-interfaces.md#btc-most-naive-procedural-design
+[less naive]:04-creating-flexible-interfaces.md#btc-less-naive-still-procedural-design
+[still naive]:04-creating-flexible-interfaces.md#btc-still-naive-trip-and-mechanic
+[much less naive]:04-creating-flexible-interfaces.md#btc-much-less-naive-trip-and-mechanic
+[object oriented trip mechanic]:04-creating-flexible-interfaces.md#object-oriented-trip-and-mechanic
+[object oriented customer trip bicycle]:04-creating-flexible-interfaces.md#object-oriented-customer-trip-and-bicycle
+
+
+
+
