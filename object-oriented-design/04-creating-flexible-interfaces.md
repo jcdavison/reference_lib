@@ -153,7 +153,7 @@ Public Methods:
 1. Exercise caution when depending on private interfaces.
 1. Minimize context.
 
-#### Law Demeter
+#### Law of Demeter
 
 Restrict the set of Objects to which a method may send messages.
 
