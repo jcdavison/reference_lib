@@ -122,3 +122,28 @@ We see Classes as the dominant element of OO programming but in a more subtle se
 [recognizing hidden ducks]:05-duck-typing.md#recognizing-hidden-ducks
 
 
+## Inheritance
+
+- [When to Use It][when to use it]
+- [Concrete Classes][concrete]
+- [Naive Implementation of `RoadBike` and `Mountainbike`][naive road mountain]
+- [Finding Embedded Types][finding embedded types] 
+- [Modeling Inheritance][Modeling Inheritance]
+- [Naive Implementation re Super][Naive Implementation re Super]
+- [2 Rules of Modeling][2 Rules of Modeling]
+- [The Abstract SuperClass][The Abstract SuperClass]
+- [The Template Method Pattern][The Template Method Pattern]
+- [Naive Implementation of Subclass Specialization][Naive Implementation of Subclass Specialization]
+- [Decoupling Using Hook Messages][Decoupling Using Hook Messages]
+
+[when to use it]:06-inheritance.md#recognizing-when-to-user-inheritance
+[concrete]:06-inheritance.md#concrete-classes
+[naive road mountain]:06-inheritance.md#naive-implementation-of-bicycle-to-manage-both-road-and-mountain
+[finding embedded types]:06-inheritance.md#finding-embedded-types
+[Modeling Inheritance]:06-inheritance.md#modeling-inheritance
+[Naive Implementation re Super]:06-inheritance.md#naive-implementation-of-mountainbike
+[2 Rules of Modeling]:06-inheritance.md#2-rules-of-modeling
+[The Abstract SuperClass]:06-inheritance.md#abstract-superclass
+[The Template Method Pattern]:06-inheritance.md#template-method-pattern
+[Naive Implementation of Subclass Specialization]:06-inheritance.md#somewhat-naive-implementation-of-subclass-specialization
+[Decoupling Using Hook Messages]:06-inheritance.md#decoupling-using-hook-messages

@@ -3,7 +3,7 @@
 
 Inheritance is a mechanism for automatic message delegation.
 
-#### Recognizing When to User Inheritance
+#### Recognizing When to Use Inheritance
 
 Consider the Mechanics from the Bicycle Tour Company (BTC).  Mechanics are responsible for keeping bikes running and bikes take an assortment of spare parts on each trip and the spares depend on whatever bike is in question.
 
@@ -254,7 +254,7 @@ Above, `Bicycle` calls `.default_tire_size` and in the case that an application 
 It is important to document template method patterns by using `NotImplementedError` wrapper methods in the abstract Superclass.
 
 
-#### Somewhat Naive Implemeneation of SubClass Specialization
+#### Somewhat Naive Implementation of SubClass Specialization
 
 Consider that we now want to implement the original spares method.  A useful pattern is to define `.spares` in the superclass and merge unique values from the subclass into it.
 
