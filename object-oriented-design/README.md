@@ -113,8 +113,12 @@ We see Classes as the dominant element of OO programming but in a more subtle se
 
 ## Duck Typing
 
-- 
+- [Overlooking Duck Types][overlooking ducks]
+- [Polymorphism][duck polymorphism]
+- [Recognizing Hidden Ducks][recognizing hidden ducks]
 
-
+[overlooking ducks]:05-duck-typing.md#overlooking-ducks 
+[duck polymorphism]:05-duck-typing.md#polymorphism
+[recognizing hidden ducks]:05-duck-typing.md#recognizing-hidden-ducks
 
 
