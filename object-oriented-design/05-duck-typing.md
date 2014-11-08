@@ -3,7 +3,11 @@
 
 #### Overlooking Ducks
 
-Noticing methods that could be 'ducks' requires paying attention to the nature of what a method does.
+Noticing methods that could be 'ducks' requires paying attention to the nature of what a method does.  A `duck` refers to a message, method or behavior that works the same way across multiple classes.  Regardless of what it is named, it does the same thing at multiple locations.
+
+A Ruby Object is liek a partygoer at a masquerade ball that changes masks to suit the theme of the moment.  
+
+Ducks are 'Behavioral Chameleons'.  A 'duck type' is also an 'across-class type'.
 
 Consider `Trip` and `Mechanic`.  We know that `Trip` needs to be able to prepare things.  Even though `mechanic` could point to anything (inside trip), `Trip` sill has to manage the methods being called on `mechanic`.
 
