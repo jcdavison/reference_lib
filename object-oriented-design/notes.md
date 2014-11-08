@@ -15,10 +15,6 @@
   
   
 ---
-
-
-
-## DUCK TYPING
 #### public interfaces that are not tied to any specific class.
 
   - consider the bicycles, customers, vehicles problem,
@@ -82,6 +78,9 @@
   - Case statements that switch on class
   - use of kind_of? or is_a?
   - responds_to?
+
+---
+
 
 ## INHERITANCE
 

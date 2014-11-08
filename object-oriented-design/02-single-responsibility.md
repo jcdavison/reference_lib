@@ -77,11 +77,11 @@ If `Gear` was being used in an application that wouldn't change, we wouldn't nee
 
 *"Mr/Mrs Gear, what is your tire size?"* - unacceptable, how can `Gear` be aware of `Tire`.
 
-A Class should be able to describe its purpose in one clear sentence. If a Class needs to use the word 'and' to describe itself, it probably does more than one thing.  If it needs 'or' it probably does multiple unrelated things.  The idea of 'cohesion' is that everything a Class does should support its purpose or singular responsibility.  It doesn't mean the class can do only one thing, but that the things it does suppor a similar purpose.  A Class that does this is said to be highly cohesive.
+A Class should be able to describe its purpose in one clear sentence. If a Class needs to use the word 'and' to describe itself, it probably does more than one thing.  If it needs 'or' it probably does multiple unrelated things.  The idea of 'cohesion' is that everything a Class does should support its purpose or singular responsibility.  It doesn't mean the class can do only one thing, but that the things it does support a similar purpose.  A Class that does this is said to be highly cohesive.
 
 Consider `Gear`...
 
-If the purpose is to calculate the ration between sprockets, it is in troubled waters.  If the purpose is to calculate the effect the `Gear` has on the bike, then `gear_inches()` starts to look more supportive.  `Tire` is still a dependency issue.
+If the purpose is to calculate the ratio between sprockets, it is in troubled waters.  If the purpose is to calculate the effect the `Gear` has on the bike, then `gear_inches()` starts to look more supportive.  `Tire` is still a dependency issue.
 
 It can be difficult to know exactly how an application will behave while it is being built, therefore, there is some friction between implementing features in this moment and understanding the Object hierarchy so as to know how to design.
 

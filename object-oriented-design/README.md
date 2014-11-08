@@ -111,6 +111,10 @@ We see Classes as the dominant element of OO programming but in a more subtle se
 [object oriented trip mechanic]:04-creating-flexible-interfaces.md#object-oriented-trip-and-mechanic
 [object oriented customer trip bicycle]:04-creating-flexible-interfaces.md#object-oriented-customer-trip-and-bicycle
 
+## Duck Typing
+
+- 
+
 
 
 
