@@ -174,4 +174,3 @@ We see Classes as the dominant element of OO programming but in a more subtle se
 [Building With Composition]:08-designing-with-composition.md#combining-objects-with-composition
 [Using Factories to Create Objects]:08-designing-with-composition.md#creating-objects-with-factories
 [Aggregation]:08-designing-with-composition.md#aggregation
-
