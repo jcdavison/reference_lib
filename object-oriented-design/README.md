@@ -158,11 +158,20 @@ We see Classes as the dominant element of OO programming but in a more subtle se
 - [Honor the Contract - LSP][Honor the Contract - LSP]
 - [Create Shallow Hierarchies][Create Shallow Hierarchies]
 
-
-
 [Finding Shareable Roles]:07-sharing-behavior-with-modules.md#finding-roles
 [Using a Module to Share a Trip]:07-sharing-behavior-with-modules.md#using-a-module-to-schedule-a-trip
 [Discovering the Schedulable Duck Type]:07-sharing-behavior-with-modules.md#discovering-the-schedulable-duck-type
 [Inheritance Antipatterns]:07-sharing-behavior-with-modules.md#2-important-inheritance-antipatterns
 [Honor the Contract - LSP]:07-sharing-behavior-with-modules.md#honor-the-contract
 [Create Shallow Hierarchies]:07-sharing-behavior-with-modules.md#create-shallow-hierarchies
+
+## Composition
+
+- [Building With Composition][Building With Composition] 
+- [Using Factories to Create Objects][Using Factories to Create Objects]
+- [Aggregation][Aggregation]
+
+[Building With Composition]:08-designing-with-composition.md#combining-objects-with-composition
+[Using Factories to Create Objects]:08-designing-with-composition.md#creating-objects-with-factories
+[Aggregation]:08-designing-with-composition.md#aggregation
+
