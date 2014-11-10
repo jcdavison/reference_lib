@@ -136,6 +136,7 @@ We see Classes as the dominant element of OO programming but in a more subtle se
 - [Naive Implementation of Subclass Specialization][Naive Implementation of Subclass Specialization]
 - [Decoupling Using Hook Messages][Decoupling Using Hook Messages]
 
+
 [when to use it]:06-inheritance.md#recognizing-when-to-user-inheritance
 [concrete]:06-inheritance.md#concrete-classes
 [naive road mountain]:06-inheritance.md#naive-implementation-of-bicycle-to-manage-both-road-and-mountain
@@ -147,3 +148,21 @@ We see Classes as the dominant element of OO programming but in a more subtle se
 [The Template Method Pattern]:06-inheritance.md#template-method-pattern
 [Naive Implementation of Subclass Specialization]:06-inheritance.md#somewhat-naive-implementation-of-subclass-specialization
 [Decoupling Using Hook Messages]:06-inheritance.md#decoupling-using-hook-messages
+
+## Sharing Behavior Through Modules
+
+- [Finding Shareable Roles][Finding Shareable Roles] 
+- [Using a Module to Share a Trip][Using a Module to Share a Trip]
+- [Discovering the Schedulable Duck Type][Discovering the Schedulable Duck Type]
+- [Inheritance Antipatterns][Inheritance Antipatterns]
+- [Honor the Contract - LSP][Honor the Contract - LSP]
+- [Create Shallow Hierarchies][Create Shallow Hierarchies]
+
+
+
+[Finding Shareable Roles]:07-sharing-behavior-with-modules.md#finding-roles
+[Using a Module to Share a Trip]:07-sharing-behavior-with-modules.md#using-a-module-to-schedule-a-trip
+[Discovering the Schedulable Duck Type]:07-sharing-behavior-with-modules.md#discovering-the-schedulable-duck-type
+[Inheritance Antipatterns]:07-sharing-behavior-with-modules.md#2-important-inheritance-antipatterns
+[Honor the Contract - LSP]:07-sharing-behavior-with-modules.md#honor-the-contract
+[Create Shallow Hierarchies]:07-sharing-behavior-with-modules.md#create-shallow-hierarchies
