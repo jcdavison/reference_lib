@@ -89,6 +89,7 @@ Once we create `Preparer`, we have reduced the context of `Trip`.  To tee things
 
 ![http://cl.ly/image/3Q3u0D0T1c09/Image%202014-11-08%20at%2012.16.33%20PM.png](http://cl.ly/image/3Q3u0D0T1c09/Image%202014-11-08%20at%2012.16.33%20PM.png)
 
+##### The Preparer Duck Type
 
 ```ruby
 class Trip
