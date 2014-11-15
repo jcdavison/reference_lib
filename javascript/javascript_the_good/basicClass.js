@@ -43,5 +43,3 @@ john.show("face")
 
 // the above can be messy for understanding the difference between instance and class methods
 // extend and include can be used to better organize these
-
-
