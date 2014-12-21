@@ -1,0 +1,34 @@
+.container {
+  display: block;
+  border: 1px solid black;
+}
+
+.red-box {
+  background-color: red;
+  border: 1px solid grey;
+}
+
+.med-box {
+  background-color: lightblue;
+  border: 1px solid grey;
+  display: inline-block;
+  width: 50%;
+}
+
+.yellow-box {
+  background-color: yellow;
+  border: 1px solid grey;
+}
+
+.small {
+  width: 20px
+}
+
+.medium {
+  width: 50px
+}
+
+.left {
+  float: left;
+}
+

@@ -1,0 +1,3 @@
+# set the permissions on a dir recursively
+# http://stackoverflow.com/questions/3740152/how-to-set-chmod-for-a-folder-and-all-of-its-subfolders-and-files-in-linux-ubunt
+chmod -R a+rX *
