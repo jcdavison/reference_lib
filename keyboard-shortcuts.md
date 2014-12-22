@@ -3,6 +3,7 @@ VIM COMMANDS - http://www.tuxfiles.org/linuxhelp/vimcheat.html
   ON DECK
   @: repeats whatever the last : command was, no visual display or indication that it has been triggered occurs
   .  repeats last change
+  n. repeat n instances of .
   :A opens the alternate of a file, for a controller, the spec file
   :R opens the related file, for a controller, opens the helper file
   ^ left or right arrow key, switches between workspaces
@@ -19,6 +20,16 @@ VIM COMMANDS - http://www.tuxfiles.org/linuxhelp/vimcheat.html
   ^w t ^w H changes horizontal to vertical split
   \R run rspec on individual test
   \r run rspec on entire file
+
+  VIM-SURROUND
+  note to change we use 'cs' change surrounding
+  cs"' change the surrounding " to a '
+  cs'<h1> the the srrounding ' to <h1></h1>
+  cst' to change the <tag></tag> back to '
+  to remove we use 'ds' delete surrounding
+  ysiw] to add [] around a [word] iw is a text-object
+  yss' will surrsound any line of text with ''
+
   
   BUFFERGATOR
   \b to activate buffergator
@@ -27,6 +38,7 @@ VIM COMMANDS - http://www.tuxfiles.org/linuxhelp/vimcheat.html
 
   NERDTREE 
   \q togggle buffergator
+
 
 
   ACK IN AN OPEN RESULTS WINDO
@@ -191,3 +203,9 @@ GIT
 
   opendiff -file1 -file2 
     opens the filediff file that is native to xcode
+
+
+
+
+
+
