@@ -1,0 +1,22 @@
+.old-centered {
+  margin: 0 auto;
+}
+
+.modern-centered {
+  display: flex; 
+  justify-content: center;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  border: 2px solid blue;
+}
+
+.brd {
+  border: 1px solid black;
+}
+
+.column {
+  width: 90%;
+}

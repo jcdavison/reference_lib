@@ -1,0 +1,51 @@
+// border-box includes padding/border in height width calculations
+// this is a choice of the designer, for sure
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 90rem;
+  width: 70%;
+  border: 5px solid cadetblue;
+}
+
+.brd {
+  border: 3px solid grey;
+}
+
+@media (min-width: 40rem) {
+  .column {
+    float: left;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .column.full { width: 98%; }
+  .column.two-thirds { width: 66.7%; }
+  .column.half { width: 45%; }
+  .column.third { width: 33.3%; }
+  .column.fourth { width: 25%; }
+  .column.flow-opposite { float: right; }  
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+ 
+.clearfix:after {
+  clear: both;
+}
+ 
+.clearfix {
+  *zoom: 1;
+}
+
+.orphan {
+  width: 50%;
+}

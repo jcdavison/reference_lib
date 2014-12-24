@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <link href='/css/normalize.css' rel='stylesheet' type='text/css'>
+    <link href='/css/centering.css' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div class='container'>
+      <p>consider the ability to center a div horizontally inside another div.
+      <div class='old-centered brd column'>
+        this div should be centered horizontally inside its parent div using margin 0 auto css style, which is more dated and to be used with older versions of ie.
+      </div>
+    </div>
+
+    <div class='container modern-centered'>
+      <div class='brd column modern-centered'>
+        <p>consider the ability to center a div horizontally inside another div.
+        </p>
+      </div>
+      <div class='brd column'>
+        this div should be centered horizontally inside its parent div using display: flex justify-content: center, a more modern style of css positioning. 
+      </div>
+    </div>
+  </body>
+</html>
