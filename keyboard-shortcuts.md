@@ -1,6 +1,11 @@
 VIM COMMANDS - http://www.tuxfiles.org/linuxhelp/vimcheat.html
 
+  ATOM
+  ctrl + shift + m toggle markdown preview
+
   ON DECK
+  ma set mark at current position indicated with id 'a'
+  `a move to mark indicated with 'a'
   @: repeats whatever the last : command was, no visual display or indication that it has been triggered occurs
   .  repeats last change
   n. repeat n instances of .
@@ -203,9 +208,3 @@ GIT
 
   opendiff -file1 -file2 
     opens the filediff file that is native to xcode
-
-
-
-
-
-
